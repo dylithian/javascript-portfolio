@@ -7,7 +7,7 @@ import text from './../CSS Modules/text.module.css';
 export class Card extends React.Component {
     render() {
         return (
-            <div className={`${background.white} ${layout.slightPadding} ${layout.flexColumnNoWrap} ${layout.shadowAsCard} ${layout.standardCard}`}>
+            <div className={`${background.white} ${layout.slightPadding} ${layout.bottomMargin} ${layout.flexColumnNoWrap} ${layout.shadowAsCard} ${layout.standardCard}`}>
                 {this.props.children}
             </div>
         );

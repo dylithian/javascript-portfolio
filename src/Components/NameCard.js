@@ -3,9 +3,15 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Card = void 0;
+exports.NameCard = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _Card = require("./Card");
+
+var _Header = require("./Header");
+
+var _SubHeader = require("./SubHeader");
 
 var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
 
@@ -37,28 +43,28 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Card = /*#__PURE__*/function (_React$Component) {
-  _inherits(Card, _React$Component);
+var NameCard = /*#__PURE__*/function (_React$Component) {
+  _inherits(NameCard, _React$Component);
 
-  var _super = _createSuper(Card);
+  var _super = _createSuper(NameCard);
 
-  function Card() {
-    _classCallCheck(this, Card);
+  function NameCard() {
+    _classCallCheck(this, NameCard);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Card, [{
+  _createClass(NameCard, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
-        className: "".concat(_backgroundModule["default"].white, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_layoutModule["default"].bottomMargin, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].shadowAsCard, " ").concat(_layoutModule["default"].standardCard)
-      }, this.props.children);
+        className: "".concat(_backgroundModule["default"].white, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].bottomMargin, " ").concat(_layoutModule["default"].shadowAsCard, " ").concat(_layoutModule["default"].centerItems, " ").concat(_layoutModule["default"].standardCard)
+      }, /*#__PURE__*/_react["default"].createElement("h1", null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Robert Steffler")), /*#__PURE__*/_react["default"].createElement("h3", null, /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, "(406)-498-7937")), /*#__PURE__*/_react["default"].createElement("h3", null, /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, "bobbysteffler@gmail.com")));
     }
   }]);
 
-  return Card;
+  return NameCard;
 }(_react["default"].Component);
 
-exports.Card = Card;
-//# sourceMappingURL=Card.js.map
+exports.NameCard = NameCard;
+//# sourceMappingURL=NameCard.js.map

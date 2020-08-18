@@ -50,7 +50,7 @@ var Content = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
-        className: "".concat(_layoutModule["default"].flex1, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].spaceBetween, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_backgroundModule["default"].offWhite)
+        className: "".concat(_layoutModule["default"].flex1, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_backgroundModule["default"].offWhite)
       }, this.props.children);
     }
   }]);

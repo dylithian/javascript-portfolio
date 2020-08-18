@@ -4,6 +4,7 @@ import {Aligner} from './Aligner';
 import {Card} from './Card';
 import {Content} from './Content';
 import {Header} from './Header';
+import {NameCard} from './NameCard';
 import {SubHeader} from './SubHeader';
 import {TextBlock} from './TextBlock';
 
@@ -14,14 +15,13 @@ export class Personal extends React.Component {
     render() {
         return (
             <Content>
+                <NameCard />
                 <Card>
                     <Header>Placeholder Content:</Header>
                     <SubHeader>
                         <Aligner align='left'>Left Text</Aligner>
                         <Aligner align='right'>Right Text<br></br>RightTwo</Aligner>
                     </SubHeader>
-                    <TextBlock>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget est lorem ipsum dolor. Sed blandit libero volutpat sed cras ornare. At urna condimentum mattis pellentesque id nibh tortor id. At in tellus integer feugiat scelerisque varius. Proin nibh nisl condimentum id. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Eu non diam phasellus vestibulum lorem sed risus ultricies. Lectus arcu bibendum at varius. Eget dolor morbi non arcu risus quis varius. Et netus et malesuada fames ac turpis egestas. Et ultrices neque ornare aenean. Fermentum iaculis eu non diam phasellus vestibulum lorem. Elementum curabitur vitae nunc sed.</TextBlock>
-                    <TextBlock />
                     <TextBlock>Posuere urna nec tincidunt praesent semper feugiat nibh sed. Morbi tincidunt augue interdum velit euismod in. Egestas integer eget aliquet nibh praesent. Sapien eget mi proin sed libero enim sed faucibus. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Eu mi bibendum neque egestas. Eu volutpat odio facilisis mauris sit amet massa. Lorem donec massa sapien faucibus et molestie. Sed id semper risus in hendrerit gravida rutrum quisque non.</TextBlock>
                     <TextBlock />
                     <TextBlock>Donec massa sapien faucibus et molestie. Sed enim ut sem viverra aliquet eget sit amet. Aliquam ultrices sagittis orci a. Lorem sed risus ultricies tristique nulla. Semper eget duis at tellus at urna. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Metus dictum at tempor commodo ullamcorper. Interdum consectetur libero id faucibus nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Laoreet sit amet cursus sit amet dictum sit amet justo. Ornare quam viverra orci sagittis eu volutpat odio. Iaculis at erat pellentesque adipiscing commodo elit at. Congue eu consequat ac felis donec. Sodales ut etiam sit amet nisl purus in mollis nunc. Amet dictum sit amet justo donec enim diam. Sit amet risus nullam eget felis eget nunc lobortis. Commodo quis imperdiet massa tincidunt.</TextBlock>
