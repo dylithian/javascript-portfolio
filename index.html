@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Steffler</title>
+
+    <span id='piggyHead'></span>
+  </head>
+  <body>
+    <div id='entry'>
+
+    </div>
+
+    <script id='piggyBody'>
+      (function(){
+         var piggyT=Date.now();
+         var bodyElement = document.getElementsByTagName("body")[0];
+         var headElement = document.getElementsByTagName("head")[0];
+         var mainCSS = document.createElement('link');
+         var mainJS = document.createElement("script");
+
+         mainJS.src = './js/main.js?t='+piggyT+'';
+         mainJS.type = 'text/javascript';
+         mainJS.async = true;
+         mainJS.defer = true;
+
+         mainCSS.rel = 'stylesheet';
+         mainCSS.href = './css/main.css?t=' + piggyT + '';
+
+         bodyElement.insertBefore(mainJS,null);
+         headElement.insertBefore(mainCSS,null);
+
+         var piggyBody = document.getElementById('piggyBody');
+         var piggyHead = document.getElementById('piggyHead');
+
+         piggyBody.parentNode.removeChild(piggyBody);
+         piggyHead.parentNode.removeChild(piggyHead);
+      })();
+    </script>
+  </body>
+</html>
