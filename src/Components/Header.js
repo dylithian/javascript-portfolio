@@ -3,15 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Card = void 0;
+exports.Header = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
+var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
 var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
-
-var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -37,28 +35,28 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Card = /*#__PURE__*/function (_React$Component) {
-  _inherits(Card, _React$Component);
+var Header = /*#__PURE__*/function (_React$Component) {
+  _inherits(Header, _React$Component);
 
-  var _super = _createSuper(Card);
+  var _super = _createSuper(Header);
 
-  function Card() {
-    _classCallCheck(this, Card);
+  function Header() {
+    _classCallCheck(this, Header);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Card, [{
+  _createClass(Header, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
-        className: "".concat(_backgroundModule["default"].white, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].shadowAsCard, " ").concat(_layoutModule["default"].standardCard)
+        className: "".concat(_layoutModule["default"].slightPadding, " ").concat(_textModule["default"].black, " ").concat(_textModule["default"].bold, " ").concat(_textModule["default"].larger)
       }, this.props.children);
     }
   }]);
 
-  return Card;
+  return Header;
 }(_react["default"].Component);
 
-exports.Card = Card;
-//# sourceMappingURL=Card.js.map
+exports.Header = Header;
+//# sourceMappingURL=Header.js.map

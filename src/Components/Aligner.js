@@ -3,15 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Card = void 0;
+exports.Aligner = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
+var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
 var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
-
-var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -37,28 +35,41 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Card = /*#__PURE__*/function (_React$Component) {
-  _inherits(Card, _React$Component);
+var Aligner = /*#__PURE__*/function (_React$Component) {
+  _inherits(Aligner, _React$Component);
 
-  var _super = _createSuper(Card);
+  var _super = _createSuper(Aligner);
 
-  function Card() {
-    _classCallCheck(this, Card);
+  function Aligner() {
+    _classCallCheck(this, Aligner);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Card, [{
+  _createClass(Aligner, [{
+    key: "getAlignment",
+    value: function getAlignment() {
+      switch (this.props.align.toLowerCase()) {
+        case 'left':
+          return _textModule["default"].leftAlign;
+          break;
+
+        case 'right':
+          return _textModule["default"].rightAlign;
+          break;
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        className: "".concat(_backgroundModule["default"].white, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].shadowAsCard, " ").concat(_layoutModule["default"].standardCard)
+      return /*#__PURE__*/_react["default"].createElement("span", {
+        className: "".concat(_layoutModule["default"].flex1, " ").concat(this.getAlignment())
       }, this.props.children);
     }
   }]);
 
-  return Card;
+  return Aligner;
 }(_react["default"].Component);
 
-exports.Card = Card;
-//# sourceMappingURL=Card.js.map
+exports.Aligner = Aligner;
+//# sourceMappingURL=Aligner.js.map

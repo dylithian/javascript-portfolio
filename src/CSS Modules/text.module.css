@@ -6,6 +6,10 @@
     font-weight: bold;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .white {
     color: white;
 }
@@ -20,4 +24,12 @@
 
 .sans {
     font-family: Tahoma, Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.rightAlign {
+    text-align: right;
 }
