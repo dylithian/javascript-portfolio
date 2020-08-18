@@ -1,15 +1,15 @@
 import React from 'React';
 
-import backgrounds from './../CSS Modules/backgrounds.module.css';
-import layouts from './../CSS Modules/layout.module.css';
+import background from './../CSS Modules/background.module.css';
+import layout from './../CSS Modules/layout.module.css';
 import text from './../CSS Modules/text.module.css';
-import effects from './../CSS Modules/effects.module.css';
+import effects from './../CSS Modules/effect.module.css';
 
 export class NavButton extends React.Component {
     render() {
         return (
             <button
-                className={`${layouts.flex1} ${backgrounds.blue} ${text.white} ${text.bold} ${text.larger} ${effects.slightFadeOnHover}`}
+                className={`${layout.flex1} ${background.blue} ${text.white} ${text.bold} ${text.larger} ${text.sans} ${effects.slightFadeOnHover}`}
                 onClick={() => { this.props.onClick(); }}
             >{this.props.label}</button>
         );

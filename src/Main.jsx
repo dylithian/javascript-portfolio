@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {Navigation} from './Components/Navigation';
+import {Personal} from './Components/Personal';
 
 import nativeElements from './CSS Modules/nativeElements.module.css';
 import layout from './CSS Modules/layout.module.css';
@@ -14,15 +15,29 @@ class Main extends React.Component {
             currentTab: 'Personal'
         }
     }
+    getAppropriateContent() {
+        switch(this.state.currentTab) {
+            case 'Personal':
+                return <Personal />;
+                break;
+        }
+    }
     buttonClicked = label => { this.setState({currentTab: label}); }
     render() {
         return (
-            <div className={`${layout.flexColumnNoWrap}`}>
-                <Navigation buttonClicked={this.buttonClicked}/>
+            <div style={{height: '100%'}} className={`${layout.flexColumnNoWrap}`}>
+                <Navigation buttonClicked={this.buttonClicked} />
+                {this.getAppropriateContent()}
             </div>
         );
     }
 }
+
+// Style the entry element because CSS Modules doesn't play nicely with IDs.
+document.getElementById('entry').style.height = '100%';
+document.getElementById('entry').style.width = '100%';
+document.getElementById('entry').style.margin = '0';
+document.getElementById('entry').style.padding = '0';
 
 ReactDOM.render(
     <Main />,

@@ -1,18 +1,28 @@
-.p-49j7wiZpK087qWRTCYD {
+._3593303BbgDLvx3nfyXQ2C {
     background-color: #5555cc;
 }
-._23G6LkFtEbqTSqtlpei4ZO {
+._2GJncmj579_boboVNZdaKr {
     background-color: darkBlue;
+}
+
+._3ftKVwKYisYQXOymzm8ICv {
+    background-color: white;
+}
+
+._2Qkl-4CB30W4GzxjAjsfFf {
+    background-color: #eeeeff;
 }
 
 ._3gMTpWvXKzsiwLBHgC-_6B {
     display: flex;
     flex-flow: column nowrap;
 }
+
 .h1d_2TF0H12Pkwyl9Bku {
     display: flex;
     flex-flow: row nowrap;
 }
+
 ._1sUGyPVzpnULwRfSFiCwik {
     display: flex;
     flex-flow: row wrap;
@@ -24,6 +34,26 @@
 
 ._3fDNZalF-Qlup2_0vj5FMx {
     width: 100%;
+}
+
+.pf7Vk7hOYF1FzIoXcVo3s {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+._1ZnnxwcAAI2WpT1Pa8FC2 {
+    padding: 10px;
+}
+
+._1e5jAMj09JFTL4MasVsSND {
+    display: flex;
+    justify-content: space-between;
+}
+
+._9NlVlXBzqcmMcBKpu5CPt {
+    flex: 0 1 auto;
+    align-self: center;
 }
 
 ._7m3lGQT5cbX94lj8zUzOX {
@@ -38,7 +68,19 @@
     color: white;
 }
 
-._1ejgY4oCf0DxNJEdYcxjWO:hover {
+._2uRuYljpPELon2GqWXvht- {
+    color: black;
+}
+
+.FUCQ2fetfs3FqIx-qGHrm {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", Times, serif;
+}
+
+._2eppxLp2hjHhNGD6Tw4gjF {
+    font-family: Tahoma, Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+
+._2rsCSI18MU9Y-OKTPd_-rx:hover {
     opacity: 0.8;
     transition: opacity 0.25s;
 }
@@ -46,6 +88,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 html {

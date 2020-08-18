@@ -9,7 +9,7 @@ var _React = _interopRequireDefault(require("React"));
 
 var _NavButton = require("./NavButton");
 
-var _backgroundsModule = _interopRequireDefault(require("./../CSS Modules/backgrounds.module.css"));
+var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
 
 var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
 
@@ -54,7 +54,7 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
       var _this = this;
 
       return /*#__PURE__*/_React["default"].createElement("div", {
-        className: "".concat(_layoutModule["default"].flexRowWithWrap, " ").concat(_layoutModule["default"].fullWidth, " ").concat(_layoutModule["default"].flex1, " ").concat(_backgroundsModule["default"].darkBlue)
+        className: "".concat(_layoutModule["default"].flexRowWithWrap, " ").concat(_layoutModule["default"].fullWidth, " ").concat(_backgroundModule["default"].darkBlue)
       }, /*#__PURE__*/_React["default"].createElement(_NavButton.NavButton, {
         label: 'Personal',
         onClick: function onClick() {

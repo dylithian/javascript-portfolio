@@ -7,13 +7,13 @@ exports.NavButton = void 0;
 
 var _React = _interopRequireDefault(require("React"));
 
-var _backgroundsModule = _interopRequireDefault(require("./../CSS Modules/backgrounds.module.css"));
+var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
 
 var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
 
 var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
-var _effectsModule = _interopRequireDefault(require("./../CSS Modules/effects.module.css"));
+var _effectModule = _interopRequireDefault(require("./../CSS Modules/effect.module.css"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -56,7 +56,7 @@ var NavButton = /*#__PURE__*/function (_React$Component) {
       var _this = this;
 
       return /*#__PURE__*/_React["default"].createElement("button", {
-        className: "".concat(_layoutModule["default"].flex1, " ").concat(_backgroundsModule["default"].blue, " ").concat(_textModule["default"].white, " ").concat(_textModule["default"].bold, " ").concat(_textModule["default"].larger, " ").concat(_effectsModule["default"].slightFadeOnHover),
+        className: "".concat(_layoutModule["default"].flex1, " ").concat(_backgroundModule["default"].blue, " ").concat(_textModule["default"].white, " ").concat(_textModule["default"].bold, " ").concat(_textModule["default"].larger, " ").concat(_textModule["default"].sans, " ").concat(_effectModule["default"].slightFadeOnHover),
         onClick: function onClick() {
           _this.props.onClick();
         }

@@ -2,10 +2,12 @@
     display: flex;
     flex-flow: column nowrap;
 }
+
 .flexRowNoWrap {
     display: flex;
     flex-flow: row nowrap;
 }
+
 .flexRowWithWrap {
     display: flex;
     flex-flow: row wrap;
@@ -17,4 +19,24 @@
 
 .fullWidth {
     width: 100%;
+}
+
+.shadowAsCard {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.slightPadding {
+    padding: 10px;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.standardCard {
+    flex: 0 1 auto;
+    align-self: center;
 }

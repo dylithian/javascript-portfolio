@@ -1,16 +1,15 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Content = void 0;
+
 var _react = _interopRequireDefault(require("react"));
 
-var _reactDom = _interopRequireDefault(require("react-dom"));
+var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
 
-var _Navigation = require("./Components/Navigation");
-
-var _Personal = require("./Components/Personal");
-
-var _nativeElementsModule = _interopRequireDefault(require("./CSS Modules/nativeElements.module.css"));
-
-var _layoutModule = _interopRequireDefault(require("./CSS Modules/layout.module.css"));
+var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -36,63 +35,28 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var Content = /*#__PURE__*/function (_React$Component) {
+  _inherits(Content, _React$Component);
 
-var Main = /*#__PURE__*/function (_React$Component) {
-  _inherits(Main, _React$Component);
+  var _super = _createSuper(Content);
 
-  var _super = _createSuper(Main);
+  function Content() {
+    _classCallCheck(this, Content);
 
-  function Main(props) {
-    var _this;
-
-    _classCallCheck(this, Main);
-
-    _this = _super.call(this, props);
-
-    _defineProperty(_assertThisInitialized(_this), "buttonClicked", function (label) {
-      _this.setState({
-        currentTab: label
-      });
-    });
-
-    _this.state = {
-      currentTab: 'Personal'
-    };
-    return _this;
+    return _super.apply(this, arguments);
   }
 
-  _createClass(Main, [{
-    key: "getAppropriateContent",
-    value: function getAppropriateContent() {
-      switch (this.state.currentTab) {
-        case 'Personal':
-          return /*#__PURE__*/_react["default"].createElement(_Personal.Personal, null);
-          break;
-      }
-    }
-  }, {
+  _createClass(Content, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
-        style: {
-          height: '100%'
-        },
-        className: "".concat(_layoutModule["default"].flexColumnNoWrap)
-      }, /*#__PURE__*/_react["default"].createElement(_Navigation.Navigation, {
-        buttonClicked: this.buttonClicked
-      }), this.getAppropriateContent());
+        className: "".concat(_layoutModule["default"].flex1, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].spaceBetween, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_backgroundModule["default"].offWhite)
+      }, this.props.children);
     }
   }]);
 
-  return Main;
-}(_react["default"].Component); // Style the entry element because CSS Modules doesn't play nicely with IDs.
+  return Content;
+}(_react["default"].Component);
 
-
-document.getElementById('entry').style.height = '100%';
-document.getElementById('entry').style.width = '100%';
-document.getElementById('entry').style.margin = '0';
-document.getElementById('entry').style.padding = '0';
-
-_reactDom["default"].render( /*#__PURE__*/_react["default"].createElement(Main, null), document.getElementById('entry'));
-//# sourceMappingURL=Main.js.map
+exports.Content = Content;
+//# sourceMappingURL=Content.js.map
