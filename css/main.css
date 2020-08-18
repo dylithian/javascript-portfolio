@@ -1,0 +1,56 @@
+.p-49j7wiZpK087qWRTCYD {
+    background-color: #5555cc;
+}
+._23G6LkFtEbqTSqtlpei4ZO {
+    background-color: darkBlue;
+}
+
+.h1d_2TF0H12Pkwyl9Bku {
+    display: flex;
+    flex-flow: row nowrap;
+}
+._1sUGyPVzpnULwRfSFiCwik {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.clTHnSJHe1nHjHAgiR8xG {
+    flex: 1;
+}
+
+._3fDNZalF-Qlup2_0vj5FMx {
+    width: 100%;
+}
+
+._7m3lGQT5cbX94lj8zUzOX {
+    font-size: larger;
+}
+
+._1ZuhYnM7dOaC_NzxM--AbS {
+    font-weight: bold;
+}
+
+._2NxGCCBudTgifzQ3c_z14k {
+    color: white;
+}
+
+._1ejgY4oCf0DxNJEdYcxjWO:hover {
+    opacity: 0.8;
+    transition: opacity 0.25s;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1em;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
