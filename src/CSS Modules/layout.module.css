@@ -1,3 +1,7 @@
+.flexColumnNoWrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
 .flexRowNoWrap {
     display: flex;
     flex-flow: row nowrap;

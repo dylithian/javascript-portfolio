@@ -8,6 +8,8 @@ var _Navigation = require("./Components/Navigation");
 
 var _nativeElementsModule = _interopRequireDefault(require("./CSS Modules/nativeElements.module.css"));
 
+var _layoutModule = _interopRequireDefault(require("./CSS Modules/layout.module.css"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -61,9 +63,11 @@ var Main = /*#__PURE__*/function (_React$Component) {
   _createClass(Main, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_Navigation.Navigation, {
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        className: "".concat(_layoutModule["default"].flexColumnNoWrap)
+      }, /*#__PURE__*/_react["default"].createElement(_Navigation.Navigation, {
         buttonClicked: this.buttonClicked
-      });
+      }));
     }
   }]);
 

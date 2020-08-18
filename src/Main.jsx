@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import {Navigation} from './Components/Navigation';
 
 import nativeElements from './CSS Modules/nativeElements.module.css';
+import layout from './CSS Modules/layout.module.css';
 
 class Main extends React.Component {
     constructor(props) {
@@ -15,7 +16,11 @@ class Main extends React.Component {
     }
     buttonClicked = label => { this.setState({currentTab: label}); }
     render() {
-        return <Navigation buttonClicked={this.buttonClicked}/>;
+        return (
+            <div className={`${layout.flexColumnNoWrap}`}>
+                <Navigation buttonClicked={this.buttonClicked}/>
+            </div>
+        );
     }
 }
 

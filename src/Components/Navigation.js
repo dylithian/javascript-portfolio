@@ -54,7 +54,7 @@ var Navigation = /*#__PURE__*/function (_React$Component) {
       var _this = this;
 
       return /*#__PURE__*/_React["default"].createElement("div", {
-        className: "".concat(_layoutModule["default"].flexRowWithWrap, " ").concat(_layoutModule["default"].fullWidth, " ").concat(_backgroundsModule["default"].darkBlue)
+        className: "".concat(_layoutModule["default"].flexRowWithWrap, " ").concat(_layoutModule["default"].fullWidth, " ").concat(_layoutModule["default"].flex1, " ").concat(_backgroundsModule["default"].darkBlue)
       }, /*#__PURE__*/_React["default"].createElement(_NavButton.NavButton, {
         label: 'Personal',
         onClick: function onClick() {
