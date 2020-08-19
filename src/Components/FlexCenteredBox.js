@@ -3,11 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Header = void 0;
+exports.FlexCenteredBox = void 0;
 
 var _react = _interopRequireDefault(require("react"));
-
-var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
 var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
 
@@ -35,28 +33,31 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Header = /*#__PURE__*/function (_React$Component) {
-  _inherits(Header, _React$Component);
+var FlexCenteredBox = /*#__PURE__*/function (_React$Component) {
+  _inherits(FlexCenteredBox, _React$Component);
 
-  var _super = _createSuper(Header);
+  var _super = _createSuper(FlexCenteredBox);
 
-  function Header() {
-    _classCallCheck(this, Header);
+  function FlexCenteredBox() {
+    _classCallCheck(this, FlexCenteredBox);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Header, [{
+  _createClass(FlexCenteredBox, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
-        className: "".concat(_layoutModule["default"].slightPadding, " ").concat(_textModule["default"].black, " ").concat(_textModule["default"].bold, " ").concat(_textModule["default"].header, " ").concat(this.props.centered ? _textModule["default"].centerAlign : '')
+        style: {
+          flex: "".concat(this.props.flex)
+        },
+        className: "".concat(_layoutModule["default"].alignSelfCenter)
       }, this.props.children);
     }
   }]);
 
-  return Header;
+  return FlexCenteredBox;
 }(_react["default"].Component);
 
-exports.Header = Header;
-//# sourceMappingURL=Header.js.map
+exports.FlexCenteredBox = FlexCenteredBox;
+//# sourceMappingURL=FlexCenteredBox.js.map

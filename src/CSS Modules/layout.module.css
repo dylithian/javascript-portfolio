@@ -1,6 +1,15 @@
+.alignSelfCenter {
+    align-self: center;
+}
+
 .centerItems {
     align-items: center;
 }
+
+.flex1 {
+    flex: 1;
+}
+
 .flexColumnNoWrap {
     display: flex;
     flex-flow: column nowrap;
@@ -16,8 +25,9 @@
     flex-flow: row wrap;
 }
 
-.flex1 {
-    flex: 1;
+.flexSpaceAround {
+    display: flex;
+    justify-content: space-around;
 }
 
 .fullWidth {

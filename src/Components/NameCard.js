@@ -59,7 +59,7 @@ var NameCard = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
         className: "".concat(_backgroundModule["default"].white, " ").concat(_layoutModule["default"].slightPadding, " ").concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].bottomMargin, " ").concat(_layoutModule["default"].shadowAsCard, " ").concat(_layoutModule["default"].centerItems, " ").concat(_layoutModule["default"].standardCard)
-      }, /*#__PURE__*/_react["default"].createElement("h1", null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Robert Steffler")), /*#__PURE__*/_react["default"].createElement("h3", null, /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, "(406)-498-7937")), /*#__PURE__*/_react["default"].createElement("h3", null, /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, "bobbysteffler@gmail.com")));
+      }, /*#__PURE__*/_react["default"].createElement("h2", null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Robert Steffler")), /*#__PURE__*/_react["default"].createElement("h3", null, /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, "(406)-498-7937")), /*#__PURE__*/_react["default"].createElement("h3", null, /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, "bobbysteffler@gmail.com")));
     }
   }]);
 
