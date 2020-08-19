@@ -139,3 +139,7 @@ button {
     padding: 10px;
 }
 
+@-ms-viewport {
+    width: device-width;
+}
+

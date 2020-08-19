@@ -19,3 +19,7 @@ button {
     border: none;
     padding: 10px;
 }
+
+@-ms-viewport {
+    width: device-width;
+}
