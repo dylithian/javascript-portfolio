@@ -16,6 +16,7 @@ export class NameCard extends React.Component {
                 <h2><Header>Robert Steffler</Header></h2>
                 <h3><SubHeader>(406)-498-7937</SubHeader></h3>
                 <h3><SubHeader>bobbysteffler@gmail.com</SubHeader></h3>
+                <h5><a href="Resume.pdf" download>Download this Resume as a PDF</a></h5>
             </div>
         );
     }
