@@ -15,6 +15,8 @@ var _Card = require("./Card");
 
 var _Content = require("./Content");
 
+var _EMSizer = require("./EMSizer");
+
 var _FlexCenteredBox = require("./FlexCenteredBox");
 
 var _Header = require("./Header");
@@ -83,11 +85,9 @@ var Personal = /*#__PURE__*/function (_React$Component) {
       return /*#__PURE__*/_react["default"].createElement(_Content.Content, null, /*#__PURE__*/_react["default"].createElement(_NameCard.NameCard, null), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Experienced Software Developer with primary focus on:"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
         columns: "2",
         items: ['Java', 'Modern JavaScript (ES6)', 'React', 'MySQL', 'Python', 'C#']
-      }), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Also familiar with Ruby, Lua, PHP, AngularJS, and more.")), /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement("div", {
-        style: {
-          maxWidth: '32em'
-        }
-      }, "    ", /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "My core belief is that learning is a ", /*#__PURE__*/_react["default"].createElement("em", null, "choice"), " and a ", /*#__PURE__*/_react["default"].createElement("em", null, "privilege"), ". Success in the extremely complicated and fast-paced software engineering industry is a function of embracing that chaos and treating the opportunity to expand one\u2019s horizons as a challenge to rise above, not as a chore.")))), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, {
+      }), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Also familiar with Ruby, Lua, PHP, AngularJS, and more.")), /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement(_EMSizer.EMSizer, {
+        size: "32"
+      }, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "My core belief is that learning is a ", /*#__PURE__*/_react["default"].createElement("em", null, "choice"), " and a ", /*#__PURE__*/_react["default"].createElement("em", null, "privilege"), ". Success in the extremely complicated and fast-paced software engineering industry is a function of embracing that chaos and treating the opportunity to expand one\u2019s horizons as a challenge to rise above, not as a chore.")))), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, {
         centered: true
       }, "Skills"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
         columns: "2",

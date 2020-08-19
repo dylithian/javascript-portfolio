@@ -4,6 +4,7 @@ import {Aligner} from './Aligner';
 import {BulletList} from './BulletList';
 import {Card} from './Card';
 import {Content} from './Content';
+import {EMSizer} from './EMSizer';
 import {FlexCenteredBox} from './FlexCenteredBox';
 import {Header} from './Header';
 import {NameCard} from './NameCard';
@@ -40,14 +41,14 @@ export class Personal extends React.Component {
                         <TextBlock>Also familiar with Ruby, Lua, PHP, AngularJS, and more.</TextBlock>
                     </FlexCenteredBox>
                     <FlexCenteredBox>
-                        <div style={{maxWidth: '32em'}}>    {/*This one is a naughty pseudo-component because this particular block is based on the appearance of the PDF resume.*/}
+                        <EMSizer size='32'>
                             <TextBlock>
                                 My core belief is that learning is a <em>choice</em> and a <em>privilege</em>. Success in the
                                 extremely complicated and fast-paced software engineering industry is
                                 a function of embracing that chaos and treating the opportunity to
                                 expand one’s horizons as a challenge to rise above, not as a chore.
                             </TextBlock>
-                        </div>
+                        </EMSizer>
                     </FlexCenteredBox>
                 </Card>
                 <Card>
