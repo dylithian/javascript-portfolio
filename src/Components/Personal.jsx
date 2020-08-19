@@ -66,7 +66,7 @@ export class Personal extends React.Component {
                         columns="2"
                         items={[
                             'Outgoing Personality','Fits well into any group','Comfortable working alone','Self-Starter','Strong Writing and Interpersonal Skills',
-                            'Diligent; Unflinching work ethic','Meticulous; Quality producer','Punctual','I was taught proper coding practices','Writes\u00a0code\u00a0for\u00a0readability\u00a0and\u00a0maintainability, not\u00a0just\u00a0functionality'
+                            'Diligent; Unflinching work ethic','Meticulous; Quality producer','Punctual','I was taught proper coding practices','Writes code for readability and maintainability, not just functionality'
                         ]}
                     />
                 </Card>

@@ -13,11 +13,14 @@ export class BulletList extends React.Component {
             let column = [];
             for(let j = startingAtItem; j < startingAtItem + columnLength; j++) {
                 column.push(
-                    <li className={`${layout.flex1}`} key={j}>{this.props.items[j]}</li>
+                    <li key={j}>{this.props.items[j]}</li>
                 );
             }
             columns.push(
-                <ul className={`${layout.flex1} ${layout.flexColumnNoWrap}`} key={i}>{column}</ul>
+                // This is a necessary wrapper div, because lists (especially multi-column lists) weren't playing nicely with flexbox.
+                <div className={`${layout.flexColumnNoWrap} ${layout.flex1}`}>
+                    <ul key={i}>{column}</ul>
+                </div>
             );
             startingAtItem += columnLength;
         }

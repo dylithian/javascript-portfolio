@@ -92,7 +92,7 @@ var Personal = /*#__PURE__*/function (_React$Component) {
         centered: true
       }, "Personal Strengths"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
         columns: "2",
-        items: ['Outgoing Personality', 'Fits well into any group', 'Comfortable working alone', 'Self-Starter', 'Strong Writing and Interpersonal Skills', 'Diligent; Unflinching work ethic', 'Meticulous; Quality producer', 'Punctual', 'I was taught proper coding practices', "Writes\xA0code\xA0for\xA0readability\xA0and\xA0maintainability, not\xA0just\xA0functionality"]
+        items: ['Outgoing Personality', 'Fits well into any group', 'Comfortable working alone', 'Self-Starter', 'Strong Writing and Interpersonal Skills', 'Diligent; Unflinching work ethic', 'Meticulous; Quality producer', 'Punctual', 'I was taught proper coding practices', 'Writes code for readability and maintainability, not just functionality']
       })));
     }
   }]);

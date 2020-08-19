@@ -57,15 +57,18 @@ var BulletList = /*#__PURE__*/function (_React$Component) {
 
         for (var j = startingAtItem; j < startingAtItem + columnLength; j++) {
           column.push( /*#__PURE__*/_react["default"].createElement("li", {
-            className: "".concat(_layoutModule["default"].flex1),
             key: j
           }, this.props.items[j]));
         }
 
-        columns.push( /*#__PURE__*/_react["default"].createElement("ul", {
-          className: "".concat(_layoutModule["default"].flex1, " ").concat(_layoutModule["default"].flexColumnNoWrap),
+        columns.push(
+        /*#__PURE__*/
+        // This is a necessary wrapper div, because lists (especially multi-column lists) weren't playing nicely with flexbox.
+        _react["default"].createElement("div", {
+          className: "".concat(_layoutModule["default"].flexColumnNoWrap, " ").concat(_layoutModule["default"].flex1)
+        }, /*#__PURE__*/_react["default"].createElement("ul", {
           key: i
-        }, column));
+        }, column)));
         startingAtItem += columnLength;
       }
 
