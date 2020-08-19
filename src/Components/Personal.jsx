@@ -10,9 +10,6 @@ import {NameCard} from './NameCard';
 import {SubHeader} from './SubHeader';
 import {TextBlock} from './TextBlock';
 
-import background from './../CSS Modules/background.module.css';
-import layout from './../CSS Modules/layout.module.css';
-
 export class Personal extends React.Component {
     since(year) {
         let years = new Date().getFullYear() - year;

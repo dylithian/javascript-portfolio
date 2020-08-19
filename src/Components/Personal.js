@@ -25,10 +25,6 @@ var _SubHeader = require("./SubHeader");
 
 var _TextBlock = require("./TextBlock");
 
-var _backgroundModule = _interopRequireDefault(require("./../CSS Modules/background.module.css"));
-
-var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
