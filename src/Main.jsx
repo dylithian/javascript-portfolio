@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import {Navigation} from './Components/Navigation';
 import {Personal} from './Components/Personal';
+import {WorkHistory} from './Components/WorkHistory';
 
 import nativeElements from './CSS Modules/nativeElements.module.css';
 import layout from './CSS Modules/layout.module.css';
@@ -19,6 +20,9 @@ class Main extends React.Component {
         switch(this.state.currentTab) {
             case 'Personal':
                 return <Personal />;
+                break;
+            case 'Work History':
+                return <WorkHistory />;
                 break;
         }
     }
