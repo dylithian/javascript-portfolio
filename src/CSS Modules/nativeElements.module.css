@@ -23,8 +23,3 @@ button {
 @-ms-viewport {
     width: device-width;
 }
-
-ul, li {
-    min-width: 0;
-    min-height: 0;
-}
