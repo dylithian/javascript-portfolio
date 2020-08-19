@@ -77,7 +77,7 @@ var References = /*#__PURE__*/function (_React$Component) {
         align: "right"
       }, "Personal Phone: (406)-490-9274", /*#__PURE__*/_react["default"].createElement("br", null), "Business Phone: (406)-494-1000")), /*#__PURE__*/_react["default"].createElement(_EMSizer.EMSizer, {
         size: "48"
-      }, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Todd is the store manager at Staples in Butte. He supervises the entire store and is directly accountable to the District Manager. Todd was responsible for hiring me, assigning training, as well as directing all my direct supervisors."))), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Todd Gasser"), /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, /*#__PURE__*/_react["default"].createElement(_Aligner.Aligner, {
+      }, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Todd is the store manager at Staples in Butte. He supervises the entire store and is directly accountable to the District Manager. Todd was responsible for hiring me, assigning training, as well as directing all my direct supervisors."))), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Travis Immonen"), /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, /*#__PURE__*/_react["default"].createElement(_Aligner.Aligner, {
         align: "left"
       }, "Print and Marketing Supervisor", /*#__PURE__*/_react["default"].createElement("br", null), "Staples"), /*#__PURE__*/_react["default"].createElement(_Aligner.Aligner, {
         align: "right"

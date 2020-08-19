@@ -79,7 +79,7 @@ export class References extends React.Component {
                     </EMSizer>
                 </Card>
                 <Card>
-                    <Header>Todd Gasser</Header>
+                    <Header>Travis Immonen</Header>
                     <SubHeader>
                         <Aligner align='left'>
                             Print and Marketing Supervisor<br></br>
@@ -93,7 +93,7 @@ export class References extends React.Component {
                         <TextBlock>
                             Travis managed the Copy and Print Center at Staples in Butte.
                             He was responsible for training me in the operations and general procedures of the print center,
-                            and while he left Staples before I did, he was one of my close mentors 
+                            and while he left Staples before I did, he was one of my close mentors
                             and is very appraised of my working abilities and credentials.
                         </TextBlock>
                     </EMSizer>
