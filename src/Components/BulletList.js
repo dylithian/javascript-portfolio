@@ -3,11 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Header = void 0;
+exports.BulletList = void 0;
 
 var _react = _interopRequireDefault(require("react"));
-
-var _textModule = _interopRequireDefault(require("./../CSS Modules/text.module.css"));
 
 var _layoutModule = _interopRequireDefault(require("./../CSS Modules/layout.module.css"));
 
@@ -35,28 +33,55 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Header = /*#__PURE__*/function (_React$Component) {
-  _inherits(Header, _React$Component);
+var BulletList = /*#__PURE__*/function (_React$Component) {
+  _inherits(BulletList, _React$Component);
 
-  var _super = _createSuper(Header);
+  var _super = _createSuper(BulletList);
 
-  function Header() {
-    _classCallCheck(this, Header);
+  function BulletList() {
+    _classCallCheck(this, BulletList);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(Header, [{
+  _createClass(BulletList, [{
+    key: "columns",
+    value: function columns() {
+      var columns = [];
+      var items = this.props.items;
+      var startingAtItem = 0;
+
+      for (var i = 0; i < this.props.columns; i++) {
+        var columnLength = Math.round(items.length / this.props.columns) + (items.length % this.props.columns > i ? 1 : 0);
+        var column = [];
+
+        for (var j = startingAtItem; j < startingAtItem + columnLength; j++) {
+          column.push( /*#__PURE__*/_react["default"].createElement("li", {
+            className: "".concat(_layoutModule["default"].flex1),
+            key: j
+          }, this.props.items[j]));
+        }
+
+        columns.push( /*#__PURE__*/_react["default"].createElement("ul", {
+          className: "".concat(_layoutModule["default"].flex1, " ").concat(_layoutModule["default"].flexColumnNoWrap),
+          key: i
+        }, column));
+        startingAtItem += columnLength;
+      }
+
+      return columns;
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react["default"].createElement("div", {
-        className: "".concat(_layoutModule["default"].slightPadding, " ").concat(_textModule["default"].black, " ").concat(_textModule["default"].bold, " ").concat(_textModule["default"].header, " ").concat(this.props.centered ? _textModule["default"].centerAlign : '')
-      }, this.props.children);
+        className: "".concat(_layoutModule["default"].flexRowNoWrap, " ").concat(_layoutModule["default"].flexSpaceAround)
+      }, this.columns());
     }
   }]);
 
-  return Header;
+  return BulletList;
 }(_react["default"].Component);
 
-exports.Header = Header;
-//# sourceMappingURL=Header.js.map
+exports.BulletList = BulletList;
+//# sourceMappingURL=BulletList.js.map

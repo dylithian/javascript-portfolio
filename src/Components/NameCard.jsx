@@ -13,7 +13,7 @@ export class NameCard extends React.Component {
     render() {
         return (
             <div className={`${background.white} ${layout.slightPadding} ${layout.flexColumnNoWrap} ${layout.bottomMargin} ${layout.shadowAsCard} ${layout.centerItems} ${layout.standardCard}`}>
-                <h1><Header>Robert Steffler</Header></h1>
+                <h2><Header>Robert Steffler</Header></h2>
                 <h3><SubHeader>(406)-498-7937</SubHeader></h3>
                 <h3><SubHeader>bobbysteffler@gmail.com</SubHeader></h3>
             </div>

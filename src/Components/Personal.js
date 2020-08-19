@@ -9,9 +9,13 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Aligner = require("./Aligner");
 
+var _BulletList = require("./BulletList");
+
 var _Card = require("./Card");
 
 var _Content = require("./Content");
+
+var _FlexCenteredBox = require("./FlexCenteredBox");
 
 var _Header = require("./Header");
 
@@ -61,13 +65,41 @@ var Personal = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Personal, [{
+    key: "since",
+    value: function since(year) {
+      var years = new Date().getFullYear() - year;
+
+      if (years == 0) {
+        return '';
+      } else if (years == 1) {
+        return ' (1 Year)';
+      } else if (years <= 10) {
+        return " (".concat(years, " Years)");
+      } else {
+        return " (10+ Years)";
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react["default"].createElement(_Content.Content, null, /*#__PURE__*/_react["default"].createElement(_NameCard.NameCard, null), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Placeholder Content:"), /*#__PURE__*/_react["default"].createElement(_SubHeader.SubHeader, null, /*#__PURE__*/_react["default"].createElement(_Aligner.Aligner, {
-        align: "left"
-      }, "Left Text"), /*#__PURE__*/_react["default"].createElement(_Aligner.Aligner, {
-        align: "right"
-      }, "Right Text", /*#__PURE__*/_react["default"].createElement("br", null), "RightTwo")), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Posuere urna nec tincidunt praesent semper feugiat nibh sed. Morbi tincidunt augue interdum velit euismod in. Egestas integer eget aliquet nibh praesent. Sapien eget mi proin sed libero enim sed faucibus. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Eu mi bibendum neque egestas. Eu volutpat odio facilisis mauris sit amet massa. Lorem donec massa sapien faucibus et molestie. Sed id semper risus in hendrerit gravida rutrum quisque non."), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Donec massa sapien faucibus et molestie. Sed enim ut sem viverra aliquet eget sit amet. Aliquam ultrices sagittis orci a. Lorem sed risus ultricies tristique nulla. Semper eget duis at tellus at urna. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Metus dictum at tempor commodo ullamcorper. Interdum consectetur libero id faucibus nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Laoreet sit amet cursus sit amet dictum sit amet justo. Ornare quam viverra orci sagittis eu volutpat odio. Iaculis at erat pellentesque adipiscing commodo elit at. Congue eu consequat ac felis donec. Sodales ut etiam sit amet nisl purus in mollis nunc. Amet dictum sit amet justo donec enim diam. Sit amet risus nullam eget felis eget nunc lobortis. Commodo quis imperdiet massa tincidunt."), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Nunc sed augue lacus viverra vitae congue. Amet tellus cras adipiscing enim eu. Eget nunc scelerisque viverra mauris in aliquam sem. At quis risus sed vulputate odio ut enim blandit. Enim diam vulputate ut pharetra. Ut consequat semper viverra nam libero justo laoreet sit amet. Malesuada fames ac turpis egestas maecenas. Nunc congue nisi vitae suscipit tellus. Non consectetur a erat nam. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Et netus et malesuada fames ac turpis. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Nisl purus in mollis nunc sed. Tincidunt id aliquet risus feugiat in. Nibh praesent tristique magna sit amet. Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Volutpat ac tincidunt vitae semper quis lectus. Sed augue lacus viverra vitae."), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Facilisis magna etiam tempor orci eu lobortis elementum nibh. Odio euismod lacinia at quis risus sed vulputate. Id semper risus in hendrerit. Posuere urna nec tincidunt praesent semper feugiat nibh. Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Tortor vitae purus faucibus ornare suspendisse sed. Natoque penatibus et magnis dis parturient montes nascetur. Gravida cum sociis natoque penatibus et. Aliquam malesuada bibendum arcu vitae elementum curabitur. Diam maecenas sed enim ut.")));
+      var since = this.since; // For semantic reasons.
+
+      return /*#__PURE__*/_react["default"].createElement(_Content.Content, null, /*#__PURE__*/_react["default"].createElement(_NameCard.NameCard, null), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Experienced Software Developer with primary focus on:"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
+        columns: "2",
+        items: ['Java', 'Modern JavaScript (ES6)', 'React', 'MySQL', 'Python', 'C#']
+      }), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Also familiar with Ruby, Lua, PHP, AngularJS, and more.")), /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement("div", {
+        style: {
+          maxWidth: '32em'
+        }
+      }, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "My core belief is that learning is a ", /*#__PURE__*/_react["default"].createElement("em", null, "choice"), " and a ", /*#__PURE__*/_react["default"].createElement("em", null, "privilege"), ". Success in the extremely complicated and fast-paced software engineering industry is a function of embracing that chaos and treating the opportunity to expand one\u2019s horizons as a challenge to rise above, not as a chore.")))), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, {
+        centered: true
+      }, "Skills"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
+        columns: "2",
+        items: ["Java".concat(since(2013)), "C#".concat(since(2018)), "HTML5/CSS3".concat(since(2014)), "JavaScript".concat(since(2014)), "React & AngularJS".concat(since(2019)), 'Python', 'Lua', "jQuery".concat(since(2014)), "PHP".concat(since(2015)), 'SQL-based RDB (Primarily MySQL)', 'Ruby', 'Management']
+      })), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Personal Strengths"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
+        columns: "2",
+        items: ['Outgoing Personality', 'Fits well into any group', 'Comfortable working alone', 'Self-Starter', 'Strong Writing and Interpersonal Skills', 'Diligent; Unflinching work ethic', 'Meticulous; Quality producer', 'Punctual']
+      })));
     }
   }]);
 
