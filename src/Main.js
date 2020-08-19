@@ -10,6 +10,8 @@ var _Navigation = require("./Components/Navigation");
 
 var _Personal = require("./Components/Personal");
 
+var _Projects = require("./Components/Projects");
+
 var _References = require("./Components/References");
 
 var _WorkHistory = require("./Components/WorkHistory");
@@ -86,6 +88,10 @@ var Main = /*#__PURE__*/function (_React$Component) {
 
         case 'References':
           return /*#__PURE__*/_react["default"].createElement(_References.References, null);
+          break;
+
+        case 'Projects':
+          return /*#__PURE__*/_react["default"].createElement(_Projects.Projects, null);
           break;
       }
     }
