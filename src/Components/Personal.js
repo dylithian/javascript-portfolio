@@ -7,8 +7,6 @@ exports.Personal = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Aligner = require("./Aligner");
-
 var _BulletList = require("./BulletList");
 
 var _Card = require("./Card");
@@ -22,8 +20,6 @@ var _FlexCenteredBox = require("./FlexCenteredBox");
 var _Header = require("./Header");
 
 var _NameCard = require("./NameCard");
-
-var _SubHeader = require("./SubHeader");
 
 var _TextBlock = require("./TextBlock");
 

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import {Aligner} from './Aligner';
 import {BulletList} from './BulletList';
 import {Card} from './Card';
 import {Content} from './Content';
@@ -8,7 +7,6 @@ import {EMSizer} from './EMSizer';
 import {FlexCenteredBox} from './FlexCenteredBox';
 import {Header} from './Header';
 import {NameCard} from './NameCard';
-import {SubHeader} from './SubHeader';
 import {TextBlock} from './TextBlock';
 
 export class Personal extends React.Component {
