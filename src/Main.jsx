@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import {Education} from './Components/Education';
 import {Navigation} from './Components/Navigation';
 import {Personal} from './Components/Personal';
 import {WorkHistory} from './Components/WorkHistory';
@@ -23,6 +24,9 @@ class Main extends React.Component {
                 break;
             case 'Work History':
                 return <WorkHistory />;
+                break;
+            case 'Education':
+                return <Education />;
                 break;
         }
     }

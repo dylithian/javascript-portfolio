@@ -4,6 +4,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
+var _Education = require("./Components/Education");
+
 var _Navigation = require("./Components/Navigation");
 
 var _Personal = require("./Components/Personal");
@@ -74,6 +76,10 @@ var Main = /*#__PURE__*/function (_React$Component) {
 
         case 'Work History':
           return /*#__PURE__*/_react["default"].createElement(_WorkHistory.WorkHistory, null);
+          break;
+
+        case 'Education':
+          return /*#__PURE__*/_react["default"].createElement(_Education.Education, null);
           break;
       }
     }
