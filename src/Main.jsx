@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import {Education} from './Components/Education';
 import {Navigation} from './Components/Navigation';
 import {Personal} from './Components/Personal';
+import {References} from './Components/References';
 import {WorkHistory} from './Components/WorkHistory';
 
 import nativeElements from './CSS Modules/nativeElements.module.css';
@@ -27,6 +28,9 @@ class Main extends React.Component {
                 break;
             case 'Education':
                 return <Education />;
+                break;
+            case 'References':
+                return <References />;
                 break;
         }
     }

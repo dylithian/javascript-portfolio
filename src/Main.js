@@ -10,6 +10,8 @@ var _Navigation = require("./Components/Navigation");
 
 var _Personal = require("./Components/Personal");
 
+var _References = require("./Components/References");
+
 var _WorkHistory = require("./Components/WorkHistory");
 
 var _nativeElementsModule = _interopRequireDefault(require("./CSS Modules/nativeElements.module.css"));
@@ -80,6 +82,10 @@ var Main = /*#__PURE__*/function (_React$Component) {
 
         case 'Education':
           return /*#__PURE__*/_react["default"].createElement(_Education.Education, null);
+          break;
+
+        case 'References':
+          return /*#__PURE__*/_react["default"].createElement(_References.References, null);
           break;
       }
     }
