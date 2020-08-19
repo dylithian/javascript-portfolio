@@ -31,6 +31,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+// This is a formatting component that constrains components that would otherwise expand to be wider to within a certain EM size range.
 var EMSizer = /*#__PURE__*/function (_React$Component) {
   _inherits(EMSizer, _React$Component);
 

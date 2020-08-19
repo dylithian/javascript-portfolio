@@ -80,17 +80,19 @@ var Personal = /*#__PURE__*/function (_React$Component) {
 
       return /*#__PURE__*/_react["default"].createElement(_Content.Content, null, /*#__PURE__*/_react["default"].createElement(_NameCard.NameCard, null), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Experienced Software Developer with primary focus on:"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
         columns: "2",
-        items: ['Java', 'Modern JavaScript (ES6)', 'React', 'MySQL', 'Python', 'C#']
+        items: ['Java', "Modern\xA0JavaScript\xA0(ES6)", 'React', 'MySQL', 'Python', 'C#']
       }), /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "Also familiar with Ruby, Lua, PHP, AngularJS, and more.")), /*#__PURE__*/_react["default"].createElement(_FlexCenteredBox.FlexCenteredBox, null, /*#__PURE__*/_react["default"].createElement(_EMSizer.EMSizer, {
-        size: "32"
+        size: "48"
       }, /*#__PURE__*/_react["default"].createElement(_TextBlock.TextBlock, null, "My core belief is that learning is a ", /*#__PURE__*/_react["default"].createElement("em", null, "choice"), " and a ", /*#__PURE__*/_react["default"].createElement("em", null, "privilege"), ". Success in the extremely complicated and fast-paced software engineering industry is a function of embracing that chaos and treating the opportunity to expand one\u2019s horizons as a challenge to rise above, not as a chore.")))), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, {
         centered: true
       }, "Skills"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
         columns: "2",
-        items: ["Java".concat(since(2013)), "C#".concat(since(2018)), "HTML5/CSS3".concat(since(2014)), "JavaScript".concat(since(2014)), "React & AngularJS".concat(since(2019)), 'Python', 'Lua', "jQuery".concat(since(2014)), "PHP".concat(since(2015)), 'SQL-based RDB (Primarily MySQL)', 'Ruby', 'Management']
-      })), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, null, "Personal Strengths"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
+        items: ["Java".concat(since(2013)), "C#".concat(since(2018)), "HTML5/CSS3".concat(since(2014)), "JavaScript".concat(since(2014)), "React\xA0&\xA0AngularJS".concat(since(2019)), 'Python', 'Lua', "jQuery".concat(since(2014)), "PHP".concat(since(2015)), "SQL-based\xA0RDB (Primarily\xA0MySQL)", 'Ruby', 'Management', "Babel & Webpack".concat(since(2020)), "NodeJS".concat(since(2019))]
+      })), /*#__PURE__*/_react["default"].createElement(_Card.Card, null, /*#__PURE__*/_react["default"].createElement(_Header.Header, {
+        centered: true
+      }, "Personal Strengths"), /*#__PURE__*/_react["default"].createElement(_BulletList.BulletList, {
         columns: "2",
-        items: ['Outgoing Personality', 'Fits well into any group', 'Comfortable working alone', 'Self-Starter', 'Strong Writing and Interpersonal Skills', 'Diligent; Unflinching work ethic', 'Meticulous; Quality producer', 'Punctual']
+        items: ['Outgoing Personality', 'Fits well into any group', 'Comfortable working alone', 'Self-Starter', 'Strong Writing and Interpersonal Skills', 'Diligent; Unflinching work ethic', 'Meticulous; Quality producer', 'Punctual', 'I was taught proper coding practices', "Writes\xA0code\xA0for\xA0readability\xA0and\xA0maintainability, not\xA0just\xA0functionality"]
       })));
     }
   }]);

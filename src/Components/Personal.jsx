@@ -32,14 +32,14 @@ export class Personal extends React.Component {
                         <TextBlock>Experienced Software Developer with primary focus on:</TextBlock>
                         <BulletList
                             columns="2"
-                            items={['Java','Modern JavaScript (ES6)','React',
+                            items={['Java','Modern\u00a0JavaScript\u00a0(ES6)','React',
                                     'MySQL','Python','C#'
                             ]}
                         />
                         <TextBlock>Also familiar with Ruby, Lua, PHP, AngularJS, and more.</TextBlock>
                     </FlexCenteredBox>
                     <FlexCenteredBox>
-                        <EMSizer size='32'>
+                        <EMSizer size='48'>
                             <TextBlock>
                                 My core belief is that learning is a <em>choice</em> and a <em>privilege</em>. Success in the
                                 extremely complicated and fast-paced software engineering industry is
@@ -54,18 +54,19 @@ export class Personal extends React.Component {
                     <BulletList
                         columns="2"
                         items={[
-                            `Java${since(2013)}`,`C#${since(2018)}`,`HTML5/CSS3${since(2014)}`,`JavaScript${since(2014)}`,`React & AngularJS${since(2019)}`,'Python','Lua',
-                            `jQuery${since(2014)}`,`PHP${since(2015)}`,'SQL-based RDB (Primarily MySQL)','Ruby','Management'
+                            `Java${since(2013)}`,`C#${since(2018)}`,`HTML5/CSS3${since(2014)}`,`JavaScript${since(2014)}`,`React\u00a0&\u00a0AngularJS${since(2019)}`,'Python','Lua',
+                            `jQuery${since(2014)}`,`PHP${since(2015)}`,'SQL-based\u00a0RDB (Primarily\u00a0MySQL)','Ruby','Management',
+                            `Babel & Webpack${since(2020)}`,`NodeJS${since(2019)}`
                         ]}
                     />
                 </Card>
                 <Card>
-                    <Header>Personal Strengths</Header>
+                    <Header centered>Personal Strengths</Header>
                     <BulletList
                         columns="2"
                         items={[
                             'Outgoing Personality','Fits well into any group','Comfortable working alone','Self-Starter','Strong Writing and Interpersonal Skills',
-                            'Diligent; Unflinching work ethic','Meticulous; Quality producer','Punctual'
+                            'Diligent; Unflinching work ethic','Meticulous; Quality producer','Punctual','I was taught proper coding practices','Writes\u00a0code\u00a0for\u00a0readability\u00a0and\u00a0maintainability, not\u00a0just\u00a0functionality'
                         ]}
                     />
                 </Card>
